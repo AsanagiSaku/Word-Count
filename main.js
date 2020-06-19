@@ -1,6 +1,6 @@
 'use strict';
 
-var textBox = null;
+var textArea = null;
 var textLength = null;
 var NonNewLine = null;
 var NonAllSpace = null;
@@ -27,7 +27,7 @@ function countLength() {
 }
 
 window.onload = function() {
-  textBox = document.getElementById("textBox");
+  textArea = document.getElementById("textArea");
   textLength = document.getElementById("textLength");
   NonNewLine = document.getElementById("NonNewLine");
   NonAllSpace = document.getElementById("NonAllSpace");
