@@ -7,7 +7,7 @@ var NonAllSpace = null;
  
 function countLength() {
   //テキストボックスの文字を取得
-  let textValue = textBox.value;
+  let textValue = textArea.value;
 
   //チェックボックスの状態を取得
   let WithOutNL = NonNewLine.checked;
