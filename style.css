@@ -1,0 +1,37 @@
+body{
+  font-family: 'TsukuARdGothic-Regular',sans-serif;
+  background-color: #B0C4DE;
+  color: #fff;
+  text-align: center;
+}
+
+textarea{
+  font-family: 'TsukuARdGothic-Regular',sans-serif;
+  color: gray;
+  height: 400px;
+  width: 850px;
+  font-size: 1.5em;
+}
+
+header{
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/*ここ自分でもあんまりよくわかってない　色々調べて混ぜた*/
+.CheckBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*チェックボックスを横並びにして真ん中に寄せたかった*/
+}
+.boxparts{
+  flex-basis: 13%;
+  /*これはちょうどいい感じの余白*/
+}
+
+h2{
+  display: inline-block;
+  /*上のを書くことで、文字の長さに応じてボーダーの長さが自動で変わる*/
+  border-bottom: dashed 3px #4169E1;
+}
