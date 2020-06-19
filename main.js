@@ -32,7 +32,7 @@ window.onload = function() {
   NonNewLine = document.getElementById("NonNewLine");
   NonAllSpace = document.getElementById("NonAllSpace");
 
-  textBox.addEventListener("keyup", countLength, false);
+  textArea.addEventListener("keyup", countLength, false);
 
   NonNewLine.addEventListener("click", countLength, false);
   NonAllSpace.addEventListener("click", countLength, false);
