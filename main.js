@@ -4,6 +4,7 @@ var textArea = null;
 var textLength = null;
 var NonNewLine = null;
 var NonAllSpace = null;
+var NonWords = null;
  
 function countLength() {
   //テキストボックスの文字を取得
@@ -26,16 +27,22 @@ function countLength() {
   textLength.innerHTML = n + " 文字";
 }
 
+function TextClear() {
+  textArea.value = "";
+}
+
 window.onload = function() {
   textArea = document.getElementById("textArea");
   textLength = document.getElementById("textLength");
   NonNewLine = document.getElementById("NonNewLine");
   NonAllSpace = document.getElementById("NonAllSpace");
+  NonWords = document.getElementById("NonWords");
 
   textArea.addEventListener("keyup", countLength, false);
 
   NonNewLine.addEventListener("click", countLength, false);
   NonAllSpace.addEventListener("click", countLength, false);
+  NonWords.addEventListener("click", countLength, false);
 
   countLength();
 }
